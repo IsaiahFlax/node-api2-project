@@ -6,7 +6,7 @@ const server = express()
 
 server.use(express.json())
 
-server.use('/api/posts', dbRouter)
+server.use('/api/', dbRouter)
 
 server.get('/', (req, res) => {
     res.send(`
